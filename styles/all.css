@@ -34,7 +34,7 @@ p{
 }
 
 #img-home{
-  margin-top: 10%;
+  margin-top: 5%;
   float: left;
   padding-top: 10px;
 }
@@ -50,9 +50,17 @@ span{
 }
 
 #more-text{
-  padding-top: 8px;
+  padding-top: 50px;
 }
 
-#more-music{
-  padding-top: 90px;
+button {
+    padding: 15px 32px;
+    border: none;
+    color: grey;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
 }
