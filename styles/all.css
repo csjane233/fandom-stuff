@@ -65,3 +65,7 @@ button {
     outline: none;
     cursor: pointer;
 }
+
+footer p{
+  font-size: 14px;
+}
