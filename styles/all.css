@@ -58,6 +58,5 @@ span{
 }
 
 audio {
-  margin: 0 0 0 5px;
-  background: red;
+  width: 1000px;
 }
