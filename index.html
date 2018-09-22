@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Z</title>
   <link rel="stylesheet" type="text/css" href="styles/all.css" media="all">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -12,7 +13,26 @@
     <img id="banner" src="images/banner.JPEG"/>
   </div>
 
-  <audio controls><source src="music/加油.mp3" type="audio/mpeg"></audio>
+  <!-- <audio controls><source src="music/加油.mp3" type="audio/mpeg"></audio> -->
+
+  <button id="playpause"><i class="fa fa-play"></i>
+  </button>
+  <audio id="player">
+      <source src="music/加油.mp3"/>
+  </audio>
+
+  <script>
+    window.player = document.getElementById('player');
+    document.getElementById('playpause').onclick = function () {
+        if (player.paused) {
+            player.play();
+            this.innerHTML = '<i class="fa fa-pause"></i>';
+        } else {
+            player.pause();
+            this.innerHTML = '<i class="fa fa-play"></i>';
+        }
+    }
+  </script>
 
   <h1>最近<span>你</span>好吗</h1>
 
